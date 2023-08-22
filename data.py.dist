@@ -1,0 +1,54 @@
+class DBOptions:
+    """
+    Database connection options class
+    """
+
+    def __init__(self, user: str, password: str, host: str, database: str):
+        self.user = user
+        self.password = password
+        self.host = host
+        self.database = database
+
+
+# Database connection options definitions
+db_options = DBOptions(
+                        user='[your username]', 
+                        password='[your password]', 
+                        host='[your host]', 
+                        database='[your database name]'
+                        )
+
+
+class APIKeys:
+    """
+    API connection details class
+    """
+
+    def __init__(self, telegram_key: str, telegram_chat_id: str):
+        self.telegram_key = telegram_key
+        self.telegram_chat_id = telegram_chat_id
+
+# API keys
+api_options = APIKeys(
+                        telegram_key='[your key]',
+                        telegram_chat_id='[your key]' 
+                        )
+
+class SFTPKeys:
+    """
+    SFTP connection class
+    """
+
+    def __init__(self, user: str, passwd: str, host: str, port: int):
+        self.user = user
+        self.passwd = passwd
+        self.host = host
+        self.port = port
+
+# SFTP connection keys
+sftp_options = SFTPKeys(
+                        user='[your user]',
+                        passwd='[your passwd]',
+                        host='[your host]',
+                        port='[your port]'
+                        )
